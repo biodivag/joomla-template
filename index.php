@@ -21,58 +21,110 @@ include_once JPATH_THEMES . '/' . $this->template . '/logic.php';
     <nav class="navbar navbar-default" role="navigation">
         <div class="container">
             <div class="row">
-                <div class="col-sm-3"></div>
+                <div class="col-sm-3">
+                    <div class="biodivag-logo">
+                        <a href="<?php echo JURI::base(); ?>" title="Biodiversity Home"><img src="templates/biodiversityag/images/biodivag-logo.jpg" alt="Biodiversity Logo" /></a>
+                    </div>
+                </div>
                 <div class="col-sm-9">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-modules">
-                    <span class="sr-only">Navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-            </div>
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-modules">
+                            <span class="sr-only">Navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
 
-            <div class="collapse navbar-collapse" id="navbar-modules">
-                <jdoc:include type="modules" name="navbar" />
-            </div>
-            </div>
+                    <div class="collapse navbar-collapse" id="navbar-modules">
+                        <jdoc:include type="modules" name="navbar" />
+                    </div>
+                </div>
             </div>
         </div>
     </nav>
 
     <!-- CONTENT -->
-    <div class="container">
+    <div class="container" id="main-container">
         <div class="row">
-            <div class="col-lg-1"></div>
-
-            <!-- content -->
-            <div class="col-xs-12 col-sm-8 col-md-8 col-lg-6">
-                <jdoc:include type="message" />
-                <jdoc:include type="component" />
-            </div> 
-
-            <div class="col-md-1 col-lg-1"></div>
-
-            <!-- sidebar -->
-            <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3" id="sidebar">
+            <div class="col-sm-3">
                 <div id="insidebar">
                     <jdoc:include type="modules" name="sidebar" style="well" />
                 </div>
             </div>
 
-            <div class="col-lg-1"></div>
+            <!-- content -->
+            <div class="col-sm-9">
+                <jdoc:include type="message" />
+                <jdoc:include type="component" />
+            </div> 
         </div>
     </div>
 
     <!-- FOOTER -->
-    <div class="container footer">
-        <p><br />Copyright &copy; <?php echo date('Y'); ?> - <?php echo $app->getCfg('sitename'); ?></p>
-    </div>
+    <div id="divider"></div>
+    <footer>
+        <div class="container" id="footer-container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="un-dekade">
+                        <img src="templates/biodiversityag/images/un-dekade-2013.jpg" alt="UN-Dekade Logo" />
+                    </div>
+                </div>
+                <div class="col-sm-9">
+                    <h2>Ihre Ansprechpartner</h2>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <p>Prof. Dr. Heide-Rose Vatterrott</p>
 
+                            <p>Hochschule Bremen<br>
+                                Fakultät 4 Elektrotechnik und Informatik<br>
+                            </p>
+                            <p>
+                                Flughafenallee 10<br>
+                                28199 Bremen</p>
+                            <p>
+                                <i class="glyphicon glyphicon-envelope"></i><a href="mailto:heide-rose.vatterrott@hs-bremen.de">heide-rose.vatterrott@hs-bremen.de</a><br>
+                                <i class="glyphicon glyphicon-phone"></i>+49 (0) 421 5905 5434<br>
+                                <i class="glyphicon glyphicon-print"></i>+49 (0) 421 5905 5484<br>
+                            </p>
+                            <p>&nbsp;</p>
+                            <h5>Technischer Mitarbeiter:</h5>
+                                <p>Martin Winkler (M.Sc.)</p>
 
-    <!-- 
-            YOUR CODE HERE
-    -->
+                                <i class="glyphicon glyphicon-envelope"></i><a href="mailto:martin.winkler@hs-bremen.de">martin.winkler@hs-bremen.de</a><br>
+                                <i class="glyphicon glyphicon-phone"></i>+49 (0) 421 5905 5096<br>
+                            </p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p>Prof. Dr. Heiko Brunken</p>
+
+                            <p>Hochschule Bremen<br>
+                                Fakultät 5 Natur und Technik<br>
+                                Internationaler Studiengang Technische<br>
+                                und Angewandte Biologie</p>
+                            <p>
+                                Neustadtswall 30<br>
+                                28199 Bremen 
+                            </p>
+                            <p>
+                                <i class="glyphicon glyphicon-envelope"></i><a href="mailto:heiko.brunken@hs-bremen.de">heiko.brunken@hs-bremen.de</a><br>
+                                <i class="glyphicon glyphicon-phone"></i>+49 (0) 421 5905 4280<br>
+                                <i class="glyphicon glyphicon-print"></i>+49 (0) 421 5905 4250<br>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row hsb-logo">
+                        <div class="col-sm-12">
+                            <img src="templates/biodiversityag/images/hsb-logo-transparent.png" alt="Logo HS Bremen" />
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <p id="copyright">Copyright &copy; <?php echo date('Y'); ?> - <?php echo $app->getCfg('sitename'); ?></p>
+    </footer>
 
 <jdoc:include type="modules" name="debug" />
 </body>

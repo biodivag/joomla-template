@@ -1,3 +1,5 @@
+/* line 5, D:\Projekte\JoomlaTemplates\Joomla3\biodiversityag\joomla-template\less\bootstrap\responsive-embed.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projekte\/JoomlaTemplates\/Joomla3\/biodiversityag\/joomla-template\/less\/bootstrap\/responsive-embed\.less}line{font-family:\000035}}
 .embed-responsive {
   position: relative;
   display: block;
@@ -5,6 +7,8 @@
   padding: 0;
   overflow: hidden;
 }
+/* line 12, D:\Projekte\JoomlaTemplates\Joomla3\biodiversityag\joomla-template\less\bootstrap\responsive-embed.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projekte\/JoomlaTemplates\/Joomla3\/biodiversityag\/joomla-template\/less\/bootstrap\/responsive-embed\.less}line{font-family:\0000312}}
 .embed-responsive .embed-responsive-item,
 .embed-responsive iframe,
 .embed-responsive embed,
@@ -17,9 +21,13 @@
   width: 100%;
   border: 0;
 }
+/* line 26, D:\Projekte\JoomlaTemplates\Joomla3\biodiversityag\joomla-template\less\bootstrap\responsive-embed.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projekte\/JoomlaTemplates\/Joomla3\/biodiversityag\/joomla-template\/less\/bootstrap\/responsive-embed\.less}line{font-family:\0000326}}
 .embed-responsive.embed-responsive-16by9 {
   padding-bottom: 56.25%;
 }
+/* line 31, D:\Projekte\JoomlaTemplates\Joomla3\biodiversityag\joomla-template\less\bootstrap\responsive-embed.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Projekte\/JoomlaTemplates\/Joomla3\/biodiversityag\/joomla-template\/less\/bootstrap\/responsive-embed\.less}line{font-family:\0000331}}
 .embed-responsive.embed-responsive-4by3 {
   padding-bottom: 75%;
 }
