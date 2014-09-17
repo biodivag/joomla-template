@@ -135,7 +135,7 @@ body {
     padding-top: 20px;
     padding-bottom: 40px;
     .gradient;
-    [itemprop="articleBody"] {
+    [itemprop="articleBody"], [itemprop="blogPost"] {
         background-color: #fafafa;
         padding:  0 15px 10px 15px;
         .box-shadow-main-container;
@@ -233,6 +233,30 @@ footer{
 .glyphicon {
     color: #fff;
     margin-right: 5px;
+}
+
+// Modules
+// mod_newsexcerpt
+ul.newsexcerpt{
+    padding: 10px 0;
+    
+    >li {
+        list-style-type: none;
+        background-color: rgba(85, 147, 187, 0.78);
+        color: #e4e4e4;
+        text-align: justify;
+        padding: 10px;
+        margin: 10px 0;
+        font-size: 12px;
+        >h2{
+            font-size: 14px;
+            color: inherit;
+            margin: 0;
+        }
+        >a{
+            color: #304C5F;
+        }
+    }
 }
 
 // Site specific styles
