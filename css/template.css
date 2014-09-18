@@ -7827,6 +7827,7 @@ html {
 }
 .page-header h1,
 .page-header h2 {
+  font-size: 30px;
   color: #fff;
   background-color: #5694bc;
   /* IE9, iOS 3.2+ */
@@ -7844,6 +7845,9 @@ html {
   border-left: 1px solid #85b2cf;
   border-right: 1px solid #85b2cf;
   padding: 15px;
+}
+#insidebar {
+  padding-top: 20px;
 }
 #main-container {
   padding-top: 20px;
@@ -7973,7 +7977,7 @@ ul.newsexcerpt {
 ul.newsexcerpt > li {
   list-style-type: none;
   background-color: rgba(85, 147, 187, 0.78);
-  color: #e4e4e4;
+  color: #FAFAFA;
   text-align: justify;
   padding: 10px;
   margin: 10px 0;

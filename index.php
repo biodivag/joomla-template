@@ -49,7 +49,7 @@ include_once JPATH_THEMES . '/' . $this->template . '/logic.php';
         <div class="row">
             <div class="col-sm-3">
                 <div id="insidebar">
-                    <jdoc:include type="modules" name="sidebar" style="well" />
+                    <jdoc:include type="modules" name="sidebar" style="none" />
                     <jdoc:include type="modules" name="latestnews" style="none" />
                 </div>
             </div>
